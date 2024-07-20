@@ -4,26 +4,13 @@ import Button from 'react-bootstrap/Button'
 import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import HeroSection from './components/HeroSection'
 
 function App() {
   return (
     <>
       <MenuBar />
-      <Container className="col-xxl-8 px-4 py-5">
-        <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div className="col-10 col-sm-8 col-lg-4">
-            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/487/1217811.jpg" className="d-block mx-lg-auto img-fluid" alt="Andor" width="430" loading="lazy" />
-          </div>
-          <div className="col-lg-8">
-            <h1 className="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-            <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button>
-            </div>
-          </div>
-        </div>
-      </Container>
+      <HeroSection />
       <Container>
         <Row>
           <Col className='d-grid'>
