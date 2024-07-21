@@ -5,6 +5,7 @@ import Badge from 'react-bootstrap/Badge'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import HeroSection from './components/HeroSection'
+import ShowList from './components/ShowList'
 
 function App() {
   return (
@@ -33,22 +34,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container className='show-list'>
-        <Row>
-          <Col className='col-12 col-sm-6 col-lg-3 d-grid'>
-            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/487/1217811.jpg" className="d-block mx-lg-auto img-fluid" alt="Andor" loading="lazy" />
-          </Col>
-          <Col className='col-12 col-sm-6 col-lg-3 d-grid'>
-            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/487/1217811.jpg" className="d-block mx-lg-auto img-fluid" alt="Andor" loading="lazy" />
-          </Col>
-          <Col className='col-12 col-sm-6 col-lg-3 d-grid'>
-            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/487/1217811.jpg" className="d-block mx-lg-auto img-fluid" alt="Andor" loading="lazy" />
-          </Col>
-          <Col className='col-12 col-sm-6 col-lg-3 d-grid'>
-            <img src="https://static.tvmaze.com/uploads/images/medium_portrait/487/1217811.jpg" className="d-block mx-lg-auto img-fluid" alt="Andor" loading="lazy" />
-          </Col>
-        </Row>
-      </Container>
+      <ShowList />
     </>
   )
 }
