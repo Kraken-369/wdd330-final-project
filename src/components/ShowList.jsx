@@ -9,10 +9,8 @@ const ShowList = () => {
 	useEffect(() => {
 		const getData = async () => {
 			const response = await fetch(`${import.meta.env.VITE_API_URL}shows?sort=rating`)
-			const json = await response.json()//.slice(0, 4)
+			const json = await response.json()
 			const tvShow = json.slice(0, 4)
-
-			console.log(tvShow)
 
 			setTvShowList(tvShow)
 		}
